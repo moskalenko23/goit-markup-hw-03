@@ -41,12 +41,23 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 .list {
   list-style: none;
+  display: flex;
 }
 /*------------Header section--------------*/
 .header {
   background: var(--alternative-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo {
   font-family: Raleway;
@@ -56,6 +67,8 @@ a {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #000000;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-span {
   color: var(--accent-color);
@@ -67,6 +80,8 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link {
   font-family: inherit;
@@ -74,6 +89,8 @@ a {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .current {
   color: var(--accent-color);
@@ -98,6 +115,9 @@ a {
 .hero {
   background: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
 }
 .title-hero {
   font-weight: 900;
@@ -119,6 +139,10 @@ a {
   color: var(--alternative-color);
   background-color: var(--btn-background);
 }
+.sub-hero {
+  padding: 0;
+  margin-bottom: 94px;
+}
 .sub-hero-title {
   font-weight: bold;
   font-size: 14px;
@@ -134,12 +158,23 @@ a {
   letter-spacing: 0.03em;
   color: var(--after-title-text-color);
 }
+
+.portfolio-section {
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .portfolio-title {
   font-weight: bold;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
 }
+
+.team-section {
+  margin-bottom: 94px;
+}
+
 .team-title {
   font-weight: bold;
   font-size: 36px;
@@ -201,6 +236,9 @@ a {
 }
 .logo-footer-span {
   color: var(--accent-color);
+}
+.address-list {
+  list-style: none;
 }
 .footer-link-address {
   font-style: normal;
