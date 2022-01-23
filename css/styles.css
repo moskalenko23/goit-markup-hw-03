@@ -42,11 +42,10 @@ a {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .list {
@@ -57,7 +56,6 @@ a {
 /*------------Header section--------------*/
 .header {
   background: var(--alternative-color);
-
 }
 .logo {
   font-family: Raleway;
@@ -69,7 +67,6 @@ a {
   color: #000000;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-left: 215px;
   margin-right: 93px;
 }
 .logo-span {
@@ -78,16 +75,16 @@ a {
 .navigation {
   background: var(--alternative-color);
   display: flex;
-  margin-right: 331px;
+  margin-right: 281px;
 }
 .header-connect {
   display: flex;
   margin-left: auto;
   align-items: center;
-  margin-left: 50px;
 }
 .header-container {
   display: flex;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-item + .header-item {
@@ -133,18 +130,17 @@ a {
 /*------------Main section--------------*/
 /*------------Studio page---------------*/
 
-
 .hero {
   background: #2f303a;
-  text-align: center;}
+  text-align: center;
+}
 
 .hero-container {
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   margin-bottom: 94px;
-  
 }
 
 .title-hero {
@@ -157,7 +153,7 @@ justify-content: center;
   color: var(--alternative-color);
   padding-top: 200px;
 }
-.btn-hero-right{
+.btn-hero-right {
   padding-bottom: 200px;
   margin-top: 30px;
 }
@@ -178,9 +174,7 @@ justify-content: center;
   border: none;
 }
 
-.sub-hero-container{
-  padding-left: 215px;
-  padding-right: 215px;
+.sub-hero-container {
 }
 
 .sub-hero {
@@ -188,11 +182,15 @@ justify-content: center;
   margin-bottom: 94px;
 }
 
-.sub-hero-item + .sub-hero-item{
-  margin-left: 30px;
+.sub-hero-list {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
 }
-.sub-hero-item{
-  width: 270px;
+
+.sub-hero-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .sub-hero-title {
   font-weight: bold;
@@ -217,35 +215,45 @@ justify-content: center;
   margin-bottom: 94px;
 }
 .portfolio-title {
-font-weight: bold;
-font-size: 36px;
-line-height: calc(42/36)
-text-align: center;
-letter-spacing: 0.03em;
-margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  line-height: calc(42 / 36);
 }
 
 .portfolio-list {
-  justify-content: center;
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
 }
-.portfolio-list-item + .portfolio-list-item {
+.portfolio-list-item {
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 
 .team-section {
-  margin-bottom: 94px;
   text-align: center;
 }
 
-.team-container{
-  background: #F5F4FA;
+.team-container {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.team-list{
-  justify-content: center;
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
 }
-.team-list-item + .team-list-item{
+
+.team-list-item {
+  width: calc(100% / 4 - 30px);
   margin-left: 30px;
+  background: var(--alternative-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -253,7 +261,6 @@ margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .title-team-members {
@@ -261,6 +268,8 @@ margin-bottom: 50px;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .vocation-team-members {
   font-size: 16px;
@@ -300,6 +309,13 @@ margin-bottom: 50px;
 .footer {
   background: #2f303a;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo-footer {
   font-family: Raleway;
   font-style: normal;
@@ -311,6 +327,10 @@ margin-bottom: 50px;
 }
 .logo-footer-span {
   color: var(--accent-color);
+}
+
+.address {
+  margin-top: 20px;
 }
 .address-list {
   list-style: none;
@@ -324,6 +344,10 @@ margin-bottom: 50px;
 .footer-link-address:hover,
 .footer-link-address:focus {
   color: var(--accent-color);
+}
+
+.footer-list-item + .footer-list-item {
+  margin-top: 10px;
 }
 .footer-list-item {
   font-weight: normal;
